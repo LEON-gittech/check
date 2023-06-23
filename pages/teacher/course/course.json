@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "t-divider": "/miniprogram_npm/tdesign-miniprogram/divider/divider",
+    "countdown": "../countdown/countdown",
+    "t-collapse": "/miniprogram_npm/tdesign-miniprogram/collapse/collapse",
+    "t-collapse-panel": "/miniprogram_npm/tdesign-miniprogram/collapse-panel/collapse-panel",
+    "van-action-sheet": "/miniprogram_npm/@vant/weapp/action-sheet/index"
+  }
+}

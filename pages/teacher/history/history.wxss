@@ -1,0 +1,4 @@
+/* pages/teacher/history/history.wxss */
+.courseInfo{
+  font-size: small;
+}

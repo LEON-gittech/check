@@ -1,0 +1,43 @@
+/* pages/teacher/check/check.wxss */
+.button-container {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4rpx #5a01a7;
+  transition: 0.7s;
+  
+  margin-top: 20px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 50rpx;
+  border-radius: 40rpx;
+  background-color: #f0f1ff;
+  color: black;
+  width: 600rpx;
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  min-height: 100rpx;
+}
+
+.check-container{
+  margin-left: 140rpx;
+}
+
+.approve-container{
+  margin-left: 100rpx;
+}
+
+.dialog-input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  margin-top: 32rpx;
+  border-radius: 8rpx;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+}
+
+.placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 96rpx;
+}

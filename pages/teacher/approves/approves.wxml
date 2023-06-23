@@ -1,0 +1,6 @@
+<!--pages/teacher/approves/approves.wxml-->
+<view class="container">
+  <view wx:for="{{approves}}" wx:key="index">
+      <button class="button" bind:tap="getApprove" id="{{item.id}}">{{item.name}} {{item.studentId}}</button>
+  </view>
+</view>

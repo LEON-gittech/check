@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/student/course/course",
+    "pages/student/approve/approve",
+    "pages/teacher/course/course",
+    "pages/teacher/check/check",
+    "pages/admin/home/home",
+    "pages/admin/course/course",
+    "pages/teacher/approves/approves",
+    "pages/teacher/approve/approve",
+    "pages/teacher/history/history",
+    "pages/teacher/courseHistory/courseHistory",
+    "pages/student/approveHistory/approveHistory",
+    "pages/student/approvesHistory/approvesHistory",
+    "pages/student/myCourse/myCourse"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "签到系统",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "t-tab-bar": "/miniprogram_npm/tdesign-miniprogram/tab-bar/tab-bar",
+    "t-tab-bar-item": "/miniprogram_npm/tdesign-miniprogram/tab-bar-item/tab-bar-item",
+    "t-message": "/miniprogram_npm/tdesign-miniprogram/message/message",
+    "t-divider": "/miniprogram_npm/tdesign-miniprogram/divider/divider",
+    "t-icon": "/miniprogram_npm/tdesign-miniprogram/icon/icon",
+    "t-input": "tdesign-miniprogram/input/input"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置将用于签到系统位置检测"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
+}

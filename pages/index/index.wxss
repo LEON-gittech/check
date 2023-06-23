@@ -1,0 +1,58 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.courseInfo{
+    font-size: small;
+}
+
+.coursesHead{
+    margin: 0 32rpx;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.courseList{
+    margin: 30rpx 32rpx;
+    height: fit-content;
+}
+
+.courses{
+    height: 800rpx;
+}
+
+.button-container {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4rpx #5a01a7;
+  transition: 0.7s;
+  
+  margin-top: 20px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 50rpx;
+  border-radius: 40rpx;
+  background-color: #f0f1ff;
+  color: black;
+  width: 600rpx;
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.course-container{
+  margin-left: 120rpx;
+}

@@ -1,0 +1,4 @@
+/* pages/teacher/course/course.wxss */
+.header{
+  margin-top: 30rpx;
+}

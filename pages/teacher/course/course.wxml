@@ -1,0 +1,35 @@
+<!--pages/teacher/course/course.wxml-->
+<view class="container">
+<!--    这里应该先发起签到，若不发起签到则不显示这些信息-->
+<!-- 课程信息  -->
+    <view style="display: flex;">
+      <view class="header" style="width: 280rpx; margin-right: 15rpx; ">
+        <view class="course" style="font-size: 40rpx;margin-top: 30rpx;">
+            {{course.courseName}}
+        </view>
+        <view style="margin-top: 15rpx;">
+          <text>当前签到情况：{{signStatus.signNum}}/{{signStatus.totalNum}}</text>
+        </view>
+      </view>
+      <countdown id="countdown" startTime="{{ startTime }}" duration="{{ duration }}" style="margin-top: 15rpx;"></countdown>
+    </view>
+    <button class="button" bind:tap="notify">
+        一键通知
+    </button>
+    <button class="button" bind:tap="getApproves">
+        收到的请假审核
+    </button>
+    <van-action-sheet
+      show="{{ show }}"
+      actions="{{ actions }}"
+      bind:close="onClose"
+      bind:select="onSelect"
+    />
+
+    <button class="button" bind:tap="onPop" id="isCheck">
+        <text style="font-size: 40rpx;">已签到列表</text>
+    </button>
+    <button class="button" id="unCheck" bind:tap="onPop">
+        <text style="font-size: 40rpx;">未签到列表</text>
+    </button>
+</view>

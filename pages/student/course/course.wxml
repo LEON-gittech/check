@@ -1,0 +1,33 @@
+<!--pages/course/course.wxml-->
+<view class="container">
+    <t-message id="t-message" />
+    <!-- 课程信息  -->
+    <view class="header">
+      <view class="courseName">
+        {{course.courseName}}
+      </view>
+      <view class="courseInfo">
+        {{course.startTime+" "+course.endTime+" "+course.coursePlace}}
+      </view>
+    </view>
+
+    <!--  签到  -->
+    <view class="buttonContainer">
+      <button class="button" bind:tap="clickCheck" wx:if="{{!isCheck}}">
+        <view>签到</view>
+      </button>
+      <button class="button" wx:else>
+        <view>已签到</view>
+      </button>
+      <!--  请假审批  -->
+      <button class="button" bind:tap="makeApprove">请假审批</button>
+    </view>
+
+    <view class="tabBar">
+        <t-tab-bar value="{{curTab}}" bindchange="onChange" theme="tag" split="{{false}}">
+            <t-tab-bar-item wx:for="{{tabList}}" wx:key="index" value="{{item.value}}" icon="{{item.icon}}">
+                {{item.label}}
+            </t-tab-bar-item>
+        </t-tab-bar>
+    </view>
+</view>

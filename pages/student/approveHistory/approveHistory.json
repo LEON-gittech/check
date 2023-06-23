@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "t-image-viewer": "/miniprogram_npm/tdesign-miniprogram/image-viewer/image-viewer",
+    "t-toast": "/miniprogram_npm/tdesign-miniprogram/toast/toast"
+  }
+}

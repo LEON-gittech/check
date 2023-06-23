@@ -1,0 +1,14 @@
+/* pages/teacher/countdown.wxss */
+.header{
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4rpx #5a01a7;
+  transition: 0.7s;
+  
+  background-color: #f0f1ff;
+  border-radius: 30rpx;
+  margin-top: 15rpx;
+  width: 600rpx;
+  text-align: center;
+  color: black;
+}

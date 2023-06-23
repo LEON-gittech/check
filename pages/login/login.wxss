@@ -1,0 +1,11 @@
+/* pages/login/login.wxss */
+.inputContainer {
+  margin-top: 20px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+  padding: 20px;
+  width: 500rpx;
+}

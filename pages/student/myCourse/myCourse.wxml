@@ -1,0 +1,20 @@
+<!--pages/student/myCourse/myCourse.wxml-->
+<view class="container">
+  <view class="courses">
+    <view class="coursesHead">我的课程</view>
+
+    <view class="coursesList" wx:for="{{courses}}" wx:key="index">
+      <button class="button-container" bind:tap="clickCourse" id="{{item.courseId}}" data-course="{{item}}">
+        <t-icon name="chart-bubble" size="50rpx" style="margin-left: 30rpx;"></t-icon>
+        <view class="course-container">
+          <view class="courseName">
+            {{item.courseName}}
+          </view>
+          <view class="courseInfo">
+            周{{item.week}} {{item.startTime}}节 - {{item.endTime}}节 {{item.coursePlace}}
+          </view>
+        </view>
+      </button>
+    </view>
+  </view>
+</view>

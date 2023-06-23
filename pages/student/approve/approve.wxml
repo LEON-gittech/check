@@ -1,0 +1,13 @@
+<!--pages/student/approve/approve.wxml-->
+<view class="container">
+    <input placeholder="请输入请假事由"
+              bindblur="getInputValue" id="reason" class="input">
+    </input>
+    <t-divider style="background-color: black;"/>
+    <button class="button" bind:tap="chooseUpload">
+      {{upLoadStatus}}
+    </button>
+    <view>
+        <button bind:tap="uploadApprove" class="uploadButton">提交</button>
+    </view>
+</view>

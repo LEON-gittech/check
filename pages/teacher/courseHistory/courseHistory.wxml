@@ -1,0 +1,18 @@
+<!--pages/teacher/courseHistory/courseHistory.wxml-->
+<view class="container">
+  <view>历史缺勤记录</view>
+  <view class="header" style="height: 200rpx; justify-content: center; display: flex; flex-direction: column;">
+    <view style="font-size: 40rpx; margin-bottom: auto; margin-top: 30rpx;">
+      {{course.courseName}}
+    </view>
+    <view class="courseInfo" style="margin-bottom: 30rpx;">
+      周{{course.week}} {{course.startTime}}节 - {{course.endTime}}节 {{course.coursePlace}}
+    </view>
+  </view>
+  <view class="header" style="margin-top: 30rpx;">
+    <view wx:for="{{courseList}}" wx:key="index">
+      {{item.id}} {{item.name}} {{item.week}}周
+      <t-divider style="background-color: black;"/>
+    </view>
+  </view>
+</view>

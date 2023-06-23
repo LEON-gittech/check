@@ -1,0 +1,21 @@
+<!--pages/teacher/history/history.wxml-->
+<view class="container">
+  <view>历史缺勤记录</view>
+  <view wx:for="{{courseList}}" wx:key="index">
+    <button class="button" id="{{item.courseId}}" bind:tap="onClick">
+      <view class="courseName">
+          {{item.courseName}}
+        </view>
+        <view class="courseInfo">
+          {{item.courseTeacher+" "+item.courseTime+" "+item.coursePlace}}
+        </view>
+    </button>
+  </view>
+  <view class="tabBar">
+    <t-tab-bar value="{{curTab}}" bindchange="onChange" theme="tag" split="{{false}}">
+      <t-tab-bar-item wx:for="{{tabList}}" wx:key="index" value="{{item.value}}" icon="{{item.icon}}">
+        {{item.label}}
+      </t-tab-bar-item>
+    </t-tab-bar>
+  </view>
+</view>

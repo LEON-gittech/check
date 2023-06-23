@@ -1,0 +1,44 @@
+<!--pages/teacher/check/check.wxml-->
+<view class="container">
+    <view class="header" style="height: 200rpx; justify-content: center; display: flex; flex-direction: column;">
+      <view style="font-size: 40rpx; margin-bottom: auto; margin-top: 30rpx;">
+        {{course.courseName}}
+      </view>
+      <view class="courseInfo" style="margin-bottom: 30rpx;">
+        周{{course.week}} {{course.startTime}}节 - {{course.endTime}}节 {{course.coursePlace}}
+      </view>
+    </view>
+    <!-- 签到按钮 -->
+    <button class="button-container" bind:tap="startCheck" data-key="showWithInput">
+        <t-icon name="check" size="50rpx" style="margin-left: 30rpx;"></t-icon>
+        <view class="check-container">
+          开始签到
+        </view>
+    </button>
+    <!-- 签到对话框 -->
+    <t-dialog
+      visible="{{showWithInput}}"
+      title="请输入签到持续时间"
+      confirm-btn="确定"
+      cancel-btn="取消"
+      bind:confirm="closeDialog"
+      bind:cancel="closeDialog"
+    >
+      <t-input
+        bindchange="getInputValue"
+        borderless
+        class="dialog-input"
+        clearable
+        slot="content"
+        placeholder="输入签到持续时间（分钟）"
+        placeholder-class="placeholder"
+      />
+    </t-dialog>
+    <!-- 审核按钮 -->
+    <button class="button-container" bind:tap="getApproves">
+      <t-icon name="file" size="50rpx" style="margin-left: 30rpx;"></t-icon>
+        <view class="approve-container">
+          收到的请假审核
+        </view>
+    </button>
+</view>

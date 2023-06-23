@@ -1,0 +1,38 @@
+/* pages/teacher/approve/approve.wxss */
+.image-container{
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+
+.images-container{
+  margin-top: 30rpx;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-gap: 15rpx;
+}
+
+.image{
+  flex-basis: 40%;
+}
+
+.approve-header{
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4rpx #5a01a7;
+  transition: 0.7s;
+  
+  background-color: #c9ccf7;
+  border-radius: 30rpx;
+  margin-top: 30rpx;
+  width: 400rpx;
+  text-align: center;
+  color: black
+}
+
+.header{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

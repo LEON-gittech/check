@@ -1,0 +1,29 @@
+<!--pages/admin/course/course.wxml-->
+<view class="container">
+    <view class="header">
+      <view class="course-container">
+        <view class="courseName">
+          {{notify.courseName}}
+        </view>
+        <view class="courseInfo">
+          周{{notify.week}} {{notify.startTime}}节 - {{notify.endTime}}节 {{notify.coursePlace}}
+        </view>
+      </view>
+      <view>
+          教师名称：{{notify.courseTeacher}} 联系方式：{{notify.teacherContact}}
+      </view>
+    </view>
+    <view class="header" style="margin-top: 30rpx;">
+        <view style="font-size: 40rpx;">老师通知：</view>
+        <view>
+            {{notify.comment}}
+        </view>
+    </view>
+    <view class="header" style="margin-top: 30rpx;">
+        <view style="font-size: 40rpx;">未签到名单:</view>
+        <view wx:for="{{notify.unSignList}}" wx:key="index">
+            <text>{{item.name}} {{item.id}}</text>
+            <t-divider style="background-color: black;"/>
+        </view>
+    </view>
+</view>

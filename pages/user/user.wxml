@@ -1,0 +1,29 @@
+<!--pages/user.wxml-->
+<view class="container">
+    <image src="../../static/imgs/2.png" mode="aspectFit" style="height: 250rpx;"></image>
+    <!-- 用户信息 -->
+    <view class="userHeader">
+        <view class="userAvatarContainer">
+            <image src="https://i.imgloc.com/2023/01/09/0FrTV.jpeg" class="userAvatar"></image>
+        </view>
+        <view class="header">
+          <view class="info-header">
+            <view>{{user.name}}</view>
+          </view>
+          <view class="info-header">
+            <view>{{user.id}}</view>
+          </view>
+        </view>
+    </view>
+    <!-- 学生端显示我的课程 -->
+    <button class="button" bind:tap="getCourses" wx:if="isStudent">我的课程</button>
+    <!-- 退出登录 -->
+    <button class="exitButton" bind:tap="exit">退出登录</button>
+    <view class="tabBar">
+        <t-tab-bar value="{{curTab}}" bindchange="onChange" theme="tag" split="{{false}}">
+            <t-tab-bar-item wx:for="{{tabList}}" wx:key="index" value="{{item.value}}" icon="{{item.icon}}">
+                {{item.label}}
+            </t-tab-bar-item>
+        </t-tab-bar>
+    </view>
+</view>

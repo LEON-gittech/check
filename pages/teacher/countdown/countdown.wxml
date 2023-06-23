@@ -1,0 +1,10 @@
+<!--pages/teacher/countdown.wxml-->
+<view class="header" style="overflow: hidden; width: 280rpx; height: 200rpx;">
+  <view style="margin-top: 80rpx">
+    <text class="countdown-label" wx:if="{{inDuration}}">倒计时：</text>
+    <text class="countdown-time" wx:if="{{inDuration}}">{{ formattedTime }}</text>
+  </view>
+  <view wx:if="{{!inDuration}}">签到结束</view>
+  <t-progress theme="plump" percentage="{{percentage}}" color="grey" style="margin-top: 40rpx;"/>
+</view>
+

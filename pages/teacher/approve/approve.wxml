@@ -1,0 +1,30 @@
+<!--pages/teacher/approve/approve.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="approve-header">
+      <view>申请人：{{approve.name}}</view>
+      <view>请假理由：{{approve.reason}}</view>
+      <view>审批材料：</view>
+    </view>
+    <view class="images-container" bind:tap="onClick" style="cursor: pointer;">
+      <view wx:for="{{approve.imgs}}" wx:key="index">
+        <image src="{{item}}" mode="aspectFill" class="image-container"></image>
+      </view>
+    </view>
+  </view>
+  <t-toast id="t-toast" />
+  <t-image-viewer
+    style="width: 100%;"
+    deleteBtn="{{deleteBtn}}"
+    closeBtn="{{closeBtn}}"
+    showIndex="{{showIndex}}"
+    visible="{{visible}}"
+    images="{{approve.imgs}}"
+    bind:change="onChange"
+    bind:delete="onDelete"
+    bind:close="onClose"
+  ></t-image-viewer>
+  <button class="button" bind:tap="agree" wx:if="{{!isDecide}}">同意</button>
+  <button class="button" bind:tap="reject" wx:if="{{!isDecide}}">拒绝</button>
+  <view class="button" wx:if="{{isDecide}}">审批成功!</view>
+</view>
