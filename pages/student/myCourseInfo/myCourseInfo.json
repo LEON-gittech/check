@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "t-calendar": "/miniprogram_npm/tdesign-miniprogram/calendar/calendar",
+    "t-popup": "/miniprogram_npm/tdesign-miniprogram/popup/popup"
+  }
+}

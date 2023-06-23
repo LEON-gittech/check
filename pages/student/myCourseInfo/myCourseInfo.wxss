@@ -1,0 +1,70 @@
+/**index.wxss**/
+.header{
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+
+.block {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  background: #fff;
+  border-radius: 16rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4rpx #5a01a7;
+  transition: 0.7s;
+  
+  margin-top: 20px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  line-height: 50rpx;
+  border-radius: 40rpx;
+  background-color: #f0f1ff;
+  color: black;
+  width: 600rpx;
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.input{
+  margin: 30rpx;
+  width: 80%;
+  height: 50rpx;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+}
+
+.button{
+  width: 80%;
+}
+
+.uploadButton{
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4rpx #5a01a7;
+  transition: 0.7s;
+
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  margin-right: 20rpx;
+  line-height: 50rpx;
+  border-radius: 40rpx;
+  background-color: #f0f1ff;
+  color: black;
+  text-align: center;
+  width: 80%;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100rpx;
+  justify-content: center;
+}

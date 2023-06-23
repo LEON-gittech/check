@@ -23,6 +23,10 @@ export const sendCheck = async(data)=>{
 export const getMyCourses = async(studentId)=>{
   return await request('/getMyCourses',studentId,'GET')
 }
+// 点击进课程进行请假
+export const getMyCourse = async(courseId)=>{
+  return await request('/getMyCourse',courseId,'GET')
+}
 // 获取我的审批列表 data={studentId}
 export const getMyApproves = async(studentId)=>{
   return await request('/getMyApproves',studentId,'GET')

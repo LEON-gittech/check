@@ -10,7 +10,9 @@ Page({
   },
 
   clickCourse(e){
-
+    wx.navigateTo({
+      url: '/pages/student/myCourseInfo/myCourseInfo?courseId='+e.currentTarget.id,
+    })
   },
 
   /**

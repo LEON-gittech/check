@@ -258,6 +258,20 @@ Mock.mock('/api/getMyCourses',{
   msg: "成功"
 })
 
+Mock.mock('/api/getMyCourse',{
+  status: 200,
+  data:{
+    courseId: "0001",
+    courseName:"计算机网络",
+    courseTeacher:"张三",
+    week: 1,
+    startTime:"1",
+    endTime:"2",
+    coursePlace:"教学楼A101",
+  },
+  msg: "成功"
+})
+
 Mock.mock('/api/getMyApproves',{
   status: 200,
   data:[

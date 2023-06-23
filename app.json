@@ -15,7 +15,8 @@
     "pages/teacher/courseHistory/courseHistory",
     "pages/student/approveHistory/approveHistory",
     "pages/student/approvesHistory/approvesHistory",
-    "pages/student/myCourse/myCourse"
+    "pages/student/myCourse/myCourse",
+    "pages/student/myCourseInfo/myCourseInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

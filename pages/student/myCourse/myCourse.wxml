@@ -4,7 +4,7 @@
     <view class="coursesHead">我的课程</view>
 
     <view class="coursesList" wx:for="{{courses}}" wx:key="index">
-      <button class="button-container" bind:tap="clickCourse" id="{{item.courseId}}" data-course="{{item}}">
+      <button class="button-container" bind:tap="clickCourse" id="{{item.courseId}}">
         <t-icon name="chart-bubble" size="50rpx" style="margin-left: 30rpx;"></t-icon>
         <view class="course-container">
           <view class="courseName">

@@ -80,7 +80,8 @@ Page({
     eventChannel.on('courseId', (data)=> {
       console.log(data.data)
       this.setData({
-        course: data.data
+        course: data.data,
+        tabList: getApp().globalData.tabList
       })
     })
   },
