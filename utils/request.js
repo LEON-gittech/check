@@ -13,7 +13,9 @@ export default (url,data={},method='GET') =>{
                 console.log("请求失败: ",err);
                 reject(err);
             },
-            header: { 'content-type': 'application/json', 'X-Requested-With': 'XMLHttpRequest' }
+            header: { 'content-type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
+            'token': wx.getStorageSync("token")
+          }
         })
     })
 }

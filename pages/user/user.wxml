@@ -16,7 +16,7 @@
         </view>
     </view>
     <!-- 学生端显示我的课程 -->
-    <button class="button" bind:tap="getCourses" wx:if="isStudent">我的课程</button>
+    <button class="button" bind:tap="getCourses" wx:if="{{isStudent}}">我的课程</button>
     <!-- 退出登录 -->
     <button class="exitButton" bind:tap="exit">退出登录</button>
     <view class="tabBar">

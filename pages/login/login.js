@@ -40,7 +40,8 @@ Page({
       return;
     }
     login({"account":this.data.account,"password":this.data.password}).then(res=>{
-        if(res.status === 200){
+        console.log(res)
+        if(res.code === 0){
             wx.showToast({
             title: '登录成功',
             icon: 'success',
@@ -79,9 +80,6 @@ Page({
             duration: 2000
             })
         }
-    })
-    getCourseList(getApp().globalData.user.id).then(res=>{
-      getApp().globalData.courseList = res.data.courseList
     })
   },
   /**

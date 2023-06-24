@@ -35,7 +35,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    getCourses(getApp().globalData.user.id).then(res=>{
+    getCourses({"id":getApp().globalData.user.id}).then(res=>{
       this.setData({
         courseList: res.data,
         curTab: getApp().globalData.curTab,

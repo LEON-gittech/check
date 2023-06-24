@@ -1,11 +1,11 @@
 const Mock = require('mockjs')
 Mock.mock('/api/login',{
-    status: 200,
+    code: 0,
     data: {
         user: {
             name: "张三",
             id: "10205101573",
-            type: 0, //0 学生 1 教师 2 辅导员教务
+            type: 1, //0 学生 1 教师 2 辅导员教务
         },
         token: "xiba"
     },
@@ -101,7 +101,7 @@ Mock.mock('/api/notify',{
     },
     msg: "通知成功"
 })
-
+// 教师端
 Mock.mock('/api/startCheck',{
   status: 200,
   data:{},
@@ -212,6 +212,18 @@ Mock.mock('/api/getAbsence',{
       }
     ]
   },
+  msg: "成功"
+})
+
+Mock.mock('/api/agree',{
+  status: 200,
+  data:[],
+  msg: "成功"
+})
+
+Mock.mock('/api/reject',{
+  status: 200,
+  data:[],
   msg: "成功"
 })
 //学生端

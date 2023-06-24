@@ -1,5 +1,6 @@
 // index.js
 import { request } from '../../utils/request.js'
+import {getCourseList} from '../../utils/api'
 // 获取应用实例
 const app = getApp()
 
@@ -25,6 +26,10 @@ Page({
         canIUseGetUserProfile: true,
       })
     }
+    // 获取本周课程列表
+    getCourseList({"id":getApp().globalData.user.id}).then(res=>{
+      getApp().globalData.courseList = res.data.courseList
+    })
     this.setData({
       tabList: getApp().globalData.tabList
     })
