@@ -12,10 +12,6 @@
   font-size: 50rpx;
 }
 
-.courseInfo{
-  
-}
-
 .courseName{
   font-size: 40rpx;
 }

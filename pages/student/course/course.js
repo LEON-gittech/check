@@ -51,9 +51,20 @@ Page({
         })
       }
     })
+    let course = this.data.course
+    course.isCheck = true
     this.setData({
-        isCheck: true
+      course: course
     })
+    // 同步全局
+    let courses = getApp().globalData.courseList
+    for(let course of courses){
+      if(course.courseId===this.data.course.courseId){
+        course.isCheck = true
+      }
+      getApp().globalData.courseList = courses
+      break
+    }
   },
   onChange(e){
     console.log("TabChange",e.detail.value)

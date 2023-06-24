@@ -13,7 +13,7 @@
 
     <!--  签到  -->
     <view class="buttonContainer">
-      <button class="button" bind:tap="clickCheck" wx:if="{{!isCheck}}">
+      <button class="button" bind:tap="clickCheck" wx:if="{{!course.isCheck}}">
         <view>签到</view>
       </button>
       <button class="button" wx:else>

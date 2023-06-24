@@ -3,7 +3,7 @@ import config from "../utils/config";
 //登录 data={account,password}
 export const login =  async (data) => {
     console.log(data)
-    return await request('/login', data, 'POST')
+    return await request(':5202/api/login', data, 'POST')
 }
 // 获取首页 courseList data=id
 export const getCourseList =  async (id) => {
